@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everybody Loves R&B</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+      }
+
+      .vertical-tabs {
+        width: 200px;
+        background-color: #ffffff;
+        padding-top: 20px;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+
+      .vertical-tabs ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .vertical-tabs li {
+        margin: 40px 0;
+      }
+
+      .vertical-tabs a {
+        display: block;
+        color: #111111;
+        padding: 15px 50px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .vertical-tabs a:active {
+        background-color: rgb(10, 10, 10);
+      }
+
+      .main-container {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+      }
+
+      .site-header,
+      .site-footer {
+        background: #030303;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+      }
+
+      .rnb-image-container {
+        display: flex;
+        justify-content: center;
+        margin: 2em 0;
+      }
+
+      .rnb-image {
+        height: 150px;
+        max-width: 100%;
+      }
+
+      .content {
+        padding: 1em;
+      }
+
+      section {
+        margin-bottom: 2em;
+      }
+
+      @media (max-width: 768px) {
+        .vertical-tabs {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+
+        .main-container {
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vertical Tabs (Sidebar) -->
+    <nav class="vertical-tabs">
+      <ul>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+      <header class="site-header">
+        <h1>EVERYBODY LOVES R&B</h1>
+      </header>
+
+      <div class="rnb-image-container">
+        <img
+          class="rnb-image"
+          src="./EVERYBODY LOVES RNB.png"
+          alt="Everybody Loves R&B"
+        />
+      </div>
+
+      <main class="content">
+        <section id="section1">
+          <h2>The Vibe of R&B</h2>
+          <p>
+            At Everybody Loves R&B, we celebrate the timeless soul, smooth
+            grooves, and heartfelt emotion that define Rhythm & Blues...
+          </p>
+        </section>
+
+        <section id="shop">
+          <h2>Shop R&B</h2>
+          <p>Snag the latest R&B merch and exclusive drops:</p>
+
+          <!-- Replace the script and div below with the actual embed code from Shopify -->
+          <div id="product-component-1234567890"></div>
+          <script type="text/javascript">
+            /* Paste the full Shopify Buy Button script here */
+          </script>
+        </section>
+
+        <section id="section2">
+          <h2>New Music</h2>
+          <p>Discover the freshest drops in R&B...</p>
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2WkIBRaChxW?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </section>
+
+        <section id="about">
+          <h2>Upcoming Events</h2>
+          <p>
+            Don’t miss a beat. Stay in the loop with the hottest R&B concerts,
+            festivals...
+          </p>
+        </section>
+
+        <h2>Join Email List</h2>
+        <p>We want to hear from you</p>
+        <form action="#" method="post">
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+          <button type="submit">Subscribe</button>
+        </form>
+      </main>
+
+      <footer class="site-footer">
+        <p>Thanks For Visiting. See You Very Very Soon!</p>
+      </footer>
+    </div>
+  </body>
+</html>
